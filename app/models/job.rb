@@ -1,3 +1,3 @@
 class Job < ApplicationRecord
-  calidates :title, presence: true
+  validates :title, presence: true
 end
