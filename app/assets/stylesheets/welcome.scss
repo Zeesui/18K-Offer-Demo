@@ -1,3 +1,99 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.welcome-index {
+  font-family: "Raleway",sans-serif;
+  color: rgba(0,0,0,0.63);
+
+}
+
+.welcome-index-top {
+  background-image: url(https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 120px;
+  text-align: center;
+  .title {
+    font-size: 4em;
+    padding-top: 120px;
+    margin-bottom: 30px;
+  }
+  .slogan {
+    font-size: 2em;
+    letter-spacing: 0.11em;
+  }
+}
+
+     /*   马上应征    */
+
+.lead {
+  margin-top: 40px;
+  color: white;
+}
+
+.btn-danger {
+  color: #FAFAFA;
+  background-color: rgba(0,0,0,0);
+  border-color: #FAFAFA;
+}
+
+.btn-danger:hover {
+  background-color: rgb(33,33,33);
+  border-color: rgb(33,33,33);
+}
+
+.lead a {
+  color: #F5F5F5;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.lead-2 a {
+  color: #F5F5F5;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+   /*  end  */
+
+.container-fluid .welcome-index-top {
+    margin: -45px -15px 20px;
+}
+
+.welcome-index-1 {
+  background-color: rgb(238,238,238);
+  margin: -20px -15px 0 -15px;
+  padding-bottom: 15px;
+ .slogan {
+   letter-spacing: 2px;
+   line-height: -5px;
+ }
+}
+
+.welcome-index-2 {
+  margin: 0px -15px 0 -15px;
+  padding-bottom: 15px;
+
+  .title {
+    font-size: 1.5em;
+  }
+  .slogan {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+  }
+}
+
+.welcome-index-3 {
+  background-color: rgb(238,238,238);
+  margin: 0 -15px 0 -15px;
+  padding-bottom: 15px;
+}
+
+.welcome-index-bottom {
+  background-image: url(https://i.imgur.com/SXKzjrS.jpg);
+  margin: 0 -15px 0 -15px;
+  padding: 90px 0 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
