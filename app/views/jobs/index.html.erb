@@ -1,3 +1,4 @@
+<!--
 <div class="dropdown clearfix pull-right">
     <button class="btn btn-default dropdown-toggle" type="button"
      id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -34,10 +35,46 @@
           <td> <%= link_to(job.title, job_path(job)) %> </td>
           <td> <%= job.wage_lower_bound %> </td>
           <td> <%= job.wage_upper_bound %> </td>
-          <td> <%= job.created_at %> </td>
+          <td> <%= job.created_at.to_date %> </td>
         </tr>
         <% end %>
       </tbody>
-
-
 </table>
+        --!>
+<div class="job-index col-md-10">
+  <% @jobs.each do |job| %>
+  <div class="job-box">
+    <div class="container">
+
+  <div class="box-1">
+    <div class="col-md-6">
+      <div class="job-title">
+
+      <%= link_to(job.title, job_path(job)) %>
+
+      <%= job.created_at.to_date %>
+      </div>
+      <div class="job-number">
+        <span> <%= job.wage_lower_bound %> ~ <%= job.wage_upper_bound %> </span>
+      </div>
+    </div>
+  </div>
+  <div class="box-2">
+    <div class="col-md-6">
+      <div class="job-company">
+        <span>公司：</span><%= job.company %>
+      </div>
+      
+      <div class="job-city">
+        <span>城市：</span><%= job.city %>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+  </div>
+  <% end %>
+</div>
