@@ -21,6 +21,8 @@
                 <% if current_user.admin? %>
                 <li> <%= link_to("Admin Panel", admin_jobs_path) %> </li>
                 <% end %>
+                <li> <%= link_to("我的收藏", "#") %> </li>
+                <li> <%= link_to("投递历史", "#") %> </li>
                 <li> <%= link_to("登出", destroy_user_session_path, method: :delete) %> </li>
               </ul>
             </li>
@@ -49,7 +51,8 @@
   </div>
 </div>
 
-<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog"
+aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
   <div class="modal-dialog">
     <div class="loginmodal-container">
       <h2>注册</h2>
@@ -57,7 +60,8 @@
         <%= f.error_notification %>
         <div class="form-inputs">
           <%= f.input :email, required: true, autofocus: true %>
-          <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+          <%= f.input :password, required: true, hint: ("#{@minimum_password_length}
+          characters minimum" if @minimum_password_length) %>
           <%= f.input :password_confirmation, required: true %>
         </div>
         <div class="form-actions">
