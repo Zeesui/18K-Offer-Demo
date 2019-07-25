@@ -1,4 +1,4 @@
-<div id="search-page" class=" jobs-show-page">
+<div id="search-page" class=" jobs-show-page" >
   <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
     <br>
     <div class="pull-right">
@@ -8,8 +8,8 @@
 
     <% if @jobs.blank?%>
       <br>
-      <div>
-        Opps! No any results matched, please try again.
+      <div class="container" style="margin-bottom: 400px;">
+        <h3>Opps! No any results matched, please try again.</h3>
       </div>
     <% else %>
       <h4>Total find <%= @jobs.count %> jobs</h4>
